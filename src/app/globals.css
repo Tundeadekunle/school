@@ -24,3 +24,21 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Add to your globals.css */
+@layer utilities {
+  .animate-fade-in-up {
+    opacity: 0;
+    transform: translateY(2rem);
+    animation: fadeInUp 4s ease-out forwards;
+  }
+  .delay-200 { animation-delay: 0.1s; }
+  .delay-300 { animation-delay: 0.3s; }
+  .delay-400 { animation-delay: 0.4s; }
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
