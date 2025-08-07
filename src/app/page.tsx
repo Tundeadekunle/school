@@ -59,8 +59,8 @@ const Page = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const router = useRouter();
 
-  const handleRegister = () => {
-    router.push('/registration');
+  const handleUpload = () => {
+    router.push('/upload');
   };
 
   const handleMenuToggle = () => {
@@ -84,7 +84,7 @@ const Page = () => {
         </div>
         <button
           className="hidden md:inline-block bg-blue-600 text-white px-5 py-2 rounded-lg font-semibold hover:bg-blue-700 transition"
-          onClick={handleRegister}
+          onClick={handleUpload}
         >
           Register
         </button>
@@ -115,7 +115,7 @@ const Page = () => {
         <a href="#staff" className="block py-2 text-gray-700 hover:text-blue-600 font-medium">Staff</a>
         <button
           className="w-full mt-2 bg-blue-600 text-white px-5 py-2 rounded-lg font-semibold hover:bg-blue-700 transition"
-          onClick={handleRegister}
+          onClick={handleUpload}
         >
           Register
         </button>
@@ -126,7 +126,7 @@ const Page = () => {
         <p className="text-lg md:text-2xl text-white/90 mb-8">Empowering students for a brighter future.</p>
         <button
           className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold text-lg hover:bg-blue-700 transition"
-          onClick={handleRegister}
+          onClick={handleUpload}
         >
           Register Now
         </button>
